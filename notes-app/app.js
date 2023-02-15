@@ -15,11 +15,33 @@ const chalk  = require ('chalk')
 // const validator = require ('validator')
 const getNotes  =  require ('./notes.js')
 
+/////////////////////
+// chalk implimentation
 
-const message = getNotes()
-console.log(message)
+// const message = getNotes()
+// console.log(message)
 
-const greenMsg = chalk.bold.inverse.red("ERROR!")
-console.log(greenMsg)
+// const greenMsg = chalk.bold.inverse.red("ERROR!")
+// console.log(greenMsg)
 
 // console.log(validator.isEmail('adcexample.com'))
+
+// console.log(process.argv[2])
+
+
+
+////////////////////////////
+//Getting input from user
+
+const command = process.argv[2]
+ 
+// console.log( process.argv)
+
+if(command === 'add'){
+    console.log('Adding note!')
+}
+    else if( command === 'remove' ){
+        console.log('Removing a note!')
+}
+
+
