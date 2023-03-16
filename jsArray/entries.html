@@ -1,0 +1,14 @@
+<!-- The entries() method returns an Array Iterator object with key/value pairs: -->
+<!-- method does not change the original array. -->
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const f = fruits.entries();
+
+for (let x of f) {
+  document.getElementById("demo").innerHTML += x + "<br>";
+}
+
+</script>
